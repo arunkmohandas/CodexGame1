@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Tap Shift</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <canvas id="gameCanvas" width="480" height="720" aria-label="One Tap Shift game canvas"></canvas>
+
+      <div id="menuScreen" class="overlay active">
+        <h1>One Tap Shift</h1>
+        <button id="startBtn" class="menu-btn">Start</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>Game Over</h2>
+        <p id="finalScoreText">Final Score: 0.000s</p>
+        <p id="highScoreText">High Score: 0.000s</p>
+        <div class="button-row">
+          <button id="restartBtn" class="menu-btn">Restart</button>
+          <button id="menuBtn" class="menu-btn secondary">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
